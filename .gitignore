@@ -1,0 +1,45 @@
+# ---- Training checkpoints (large, regenerable) ----
+phase4/muril_checkpoints/
+phase4/muril_checkpoints_10k/
+
+# ---- Model weight files (exceed GitHub's 100MB limit) ----
+*.safetensors
+*.bin
+optimizer.pt
+scheduler.pt
+scaler.pt
+rng_state.pth
+training_args.bin
+
+# If you decide to exclude the trained model dirs entirely, uncomment:
+# phase4/muril_fraud_model/
+# phase4/muril_fraud_model_10k/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---- Node / frontend ----
+node_modules/
+dist/
+build/
+.vite/
+
+# ---- Env / secrets ----
+.env
+.env.local
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Large data (uncomment if these are big — see note below) ----
+# phase2/train.csv
+# phase2/val.csv
+# phase2/test.csv
+# phase1/cleaned_sms_dataset.csv

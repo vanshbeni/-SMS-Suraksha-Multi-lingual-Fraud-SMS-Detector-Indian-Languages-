@@ -1,0 +1,93 @@
+PHASE 5 — LIME EXPLANATIONS
+============================================================
+
+Language: mr
+Prediction: SPAM
+Spam probability: 0.9985
+Message:
+हे एक अंतिम संपर्क प्रयत्न आहे. आपण महत्त्वाचे संदेश आपल्या ग्राहकाचे दावे प्रतीक्षा करतो. 13/4/04. कॉल 08717507382 आता!
+
+Top contributing tokens:
+  08717507382 : +0.1204 (SPAM)
+  स : +0.1124 (SPAM)
+  04 : +0.1047 (SPAM)
+  अ : +0.0932 (SPAM)
+  र : +0.0892 (SPAM)
+  आत : -0.0798 (HAM)
+  न : +0.0737 (SPAM)
+  ष : -0.0734 (HAM)
+
+------------------------------------------------------------
+
+Language: bn
+Prediction: SPAM
+Spam probability: 0.9985
+Message:
+নোকিয়া ফোন, একটি 40GB iPod MP3 খেলোয়াড় বা £ 500 পুরস্কার! টেক্ট Word: COLLECT to No: 83355! IBHltd LdnW15H 150p/Mtmsgrcvd18
+
+Top contributing tokens:
+  LdnW15H : +0.0377 (SPAM)
+  83355 : +0.0359 (SPAM)
+  No : +0.0315 (SPAM)
+  COLLECT : +0.0300 (SPAM)
+  র : -0.0261 (HAM)
+  ক : +0.0254 (SPAM)
+  প : -0.0143 (HAM)
+  ল : -0.0008 (HAM)
+
+------------------------------------------------------------
+
+Language: hi
+Prediction: SPAM
+Spam probability: 0.9985
+Message:
+आप कैसे कर रहे हैं? आशा है कि आप नए स्कूल साल के लिए आयोजित किया गया है। बस आप एक एमआरीटीटी दिन आप
+
+Top contributing tokens:
+  आय : +0.2633 (SPAM)
+  य : +0.2630 (SPAM)
+  क : +0.2125 (SPAM)
+  नए : +0.1970 (SPAM)
+  कर : +0.1674 (SPAM)
+  आप : +0.1630 (SPAM)
+  द : +0.1511 (SPAM)
+  बस : -0.0333 (HAM)
+
+------------------------------------------------------------
+
+Language: pa
+Prediction: SPAM
+Spam probability: 0.9985
+Message:
+U Cash-Balance ਇਸ ਵੇਲੇ 500 £ ਹੈ - ਇਸ ਵੇਲੇ U Cash-In ਨੂੰ ਮੈਕਸ ਕਰਨ ਲਈ ਹੁਣ COLLECT ਨੂੰ 83600 ਨੂੰ 150p/msg. CC: 08718720201 PO BOX 114/14 TCR/W1
+
+Top contributing tokens:
+  TCR : +0.0046 (SPAM)
+  ਵ : +0.0039 (SPAM)
+  83600 : +0.0038 (SPAM)
+  500 : +0.0033 (SPAM)
+  ਕਰਨ : +0.0032 (SPAM)
+  114 : +0.0032 (SPAM)
+  Cash : +0.0030 (SPAM)
+  msg : +0.0025 (SPAM)
+
+------------------------------------------------------------
+
+Language: pa
+Prediction: SPAM
+Spam probability: 0.9985
+Message:
+You have WON a guaranteed £1000 cash or a £2000 prize. for claim yr prize call our customer service representative at 08714712379 between 10am-7pm ਕੀਮਤ 10p
+
+Top contributing tokens:
+  prize : +0.0000 (SPAM)
+  guaranteed : +0.0000 (SPAM)
+  claim : +0.0000 (SPAM)
+  10am : +0.0000 (SPAM)
+  10p : +0.0000 (SPAM)
+  service : +0.0000 (SPAM)
+  08714712379 : -0.0000 (HAM)
+  2000 : -0.0000 (HAM)
+
+------------------------------------------------------------
+

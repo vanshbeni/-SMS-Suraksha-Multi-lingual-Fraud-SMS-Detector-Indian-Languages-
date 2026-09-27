@@ -1,0 +1,26 @@
+PHASE 1 SUMMARY — INDIAN LANGUAGES ONLY (melted long format)
+=======================================================
+Languages included: ['bn', 'en', 'hi', 'mr', 'pa', 'ur']
+Total (message, language) rows: 30333
+Class balance:
+label
+ham     26550
+spam     3783
+
+Rows per language:
+language
+en    5157
+hi    5132
+mr    5100
+bn    5038
+pa    4973
+ur    4933
+
+Spam ratio by language:
+language
+ur    0.129536
+bn    0.126836
+en    0.124297
+mr    0.123529
+hi    0.122759
+pa    0.121456

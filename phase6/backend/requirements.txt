@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+torch
+transformers
+langdetect
+joblib
+scipy
+scikit-learn
+pydantic

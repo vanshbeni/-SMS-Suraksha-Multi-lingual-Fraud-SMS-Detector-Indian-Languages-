@@ -1,0 +1,40 @@
+PHASE 4 — MURIL 10K EXPERIMENT RESULTS
+============================================================
+
+Model: google/muril-base-cased
+Training rows: 10000
+Training original SMS groups: 1703
+Validation rows: 4553
+Test rows: 4548
+Epochs: 3
+MAX_LEN: 64
+Batch size: 4
+
+FINAL TEST METRICS
+----------------------------------------
+Accuracy : 0.9778
+Precision: 0.8986
+Recall   : 0.9257
+F1       : 0.9119
+
+CLASSIFICATION REPORT
+----------------------------------------
+              precision    recall  f1-score   support
+
+         ham       0.99      0.99      0.99      3983
+        spam       0.90      0.93      0.91       565
+
+    accuracy                           0.98      4548
+   macro avg       0.94      0.96      0.95      4548
+weighted avg       0.98      0.98      0.98      4548
+
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+language  accuracy  precision   recall       f1
+      bn  0.980159   0.935484 0.906250 0.920635
+      en  0.989664   0.948980 0.968750 0.958763
+      hi  0.966278   0.841584 0.894737 0.867347
+      mr  0.972513   0.858586 0.923913 0.890052
+      pa  0.975774   0.900000 0.900000 0.900000
+      ur  0.982432   0.910891 0.958333 0.934010

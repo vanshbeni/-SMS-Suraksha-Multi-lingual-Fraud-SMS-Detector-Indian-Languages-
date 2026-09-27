@@ -1,0 +1,75 @@
+PHASE 3 — BASELINE MODEL RESULTS
+============================================================
+
+IMPORTANT:
+Models were selected using the validation set.
+The test set was used only for final evaluation.
+
+VALIDATION RESULTS
+----------------------------------------
+
+logistic_regression
+Accuracy : 0.9736
+Precision: 0.9101
+Recall   : 0.8748
+F1       : 0.8921
+
+linear_svm
+Accuracy : 0.9758
+Precision: 0.9255
+Recall   : 0.8765
+F1       : 0.9004
+
+naive_bayes
+Accuracy : 0.9701
+Precision: 0.9267
+Recall   : 0.8254
+F1       : 0.8731
+
+
+FINAL TEST RESULTS
+----------------------------------------
+
+logistic_regression
+Accuracy : 0.9804
+Precision: 0.9281
+Recall   : 0.9133
+F1       : 0.9206
+
+linear_svm
+Accuracy : 0.9826
+Precision: 0.9371
+Recall   : 0.9221
+F1       : 0.9295
+
+naive_bayes
+Accuracy : 0.9785
+Precision: 0.9364
+Recall   : 0.8867
+F1       : 0.9109
+
+
+BEST MODEL: linear_svm
+
+
+BEST MODEL — CLASSIFICATION REPORT
+----------------------------------------
+              precision    recall  f1-score   support
+
+         ham       0.99      0.99      0.99      3983
+        spam       0.94      0.92      0.93       565
+
+    accuracy                           0.98      4548
+   macro avg       0.96      0.96      0.96      4548
+weighted avg       0.98      0.98      0.98      4548
+
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+language  accuracy  precision   recall       f1
+      bn  0.982804   0.956044 0.906250 0.930481
+      en  0.992248   0.978723 0.958333 0.968421
+      hi  0.977951   0.890000 0.936842 0.912821
+      mr  0.986911   0.955556 0.934783 0.945055
+      pa  0.975774   0.909091 0.888889 0.898876
+      ur  0.979730   0.935484 0.906250 0.920635

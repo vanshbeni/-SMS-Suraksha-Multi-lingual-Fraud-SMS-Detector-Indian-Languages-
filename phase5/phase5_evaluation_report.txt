@@ -1,0 +1,80 @@
+PHASE 5 — FINAL EVALUATION & EXPLAINABILITY
+======================================================================
+
+MODEL
+----------------------------------------
+Fine-tuned model: MuRIL
+Model directory: C:\Users\vansh\Desktop\sms_suraksha_project\project\phase5\..\phase4\muril_fraud_model_10k
+Maximum sequence length: 64
+
+TEST DATA
+----------------------------------------
+Test rows: 4548
+Languages: ['bn', 'en', 'hi', 'mr', 'pa', 'ur']
+
+OVERALL TEST METRICS
+----------------------------------------
+Accuracy : 0.9778
+Precision: 0.8986
+Recall   : 0.9257
+F1       : 0.9119
+
+CLASSIFICATION REPORT
+----------------------------------------
+              precision    recall  f1-score   support
+
+         ham       0.99      0.99      0.99      3983
+        spam       0.90      0.93      0.91       565
+
+    accuracy                           0.98      4548
+   macro avg       0.94      0.96      0.95      4548
+weighted avg       0.98      0.98      0.98      4548
+
+
+CONFUSION MATRIX
+----------------------------------------
+[[3924   59]
+ [  42  523]]
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+language   n  accuracy  precision   recall       f1
+      bn 756  0.980159   0.935484 0.906250 0.920635
+      en 774  0.989664   0.948980 0.968750 0.958763
+      hi 771  0.966278   0.841584 0.894737 0.867347
+      mr 764  0.972513   0.858586 0.923913 0.890052
+      pa 743  0.975774   0.900000 0.900000 0.900000
+      ur 740  0.982432   0.910891 0.958333 0.934010
+
+LIME EXPLANATIONS
+----------------------------------------
+
+[mr] हे एक अंतिम संपर्क प्रयत्न आहे. आपण महत्त्वाचे संदेश आपल्या ग्राहकाचे दावे प्रतीक्षा करतो. 13/4/04. कॉल 08717507382 आता!
+Prediction: SPAM
+Spam probability: 0.9985
+Contributing tokens:
+[(np.str_('08717507382'), 0.120443696847829), (np.str_('स'), 0.11238947610309331), (np.str_('04'), 0.10467990785612247), (np.str_('अ'), 0.09321871798445504), (np.str_('र'), 0.08916567431093375), (np.str_('आत'), -0.07984436297957268), (np.str_('न'), 0.07371127865302242), (np.str_('ष'), -0.07339563823926197)]
+
+[bn] নোকিয়া ফোন, একটি 40GB iPod MP3 খেলোয়াড় বা £ 500 পুরস্কার! টেক্ট Word: COLLECT to No: 83355! IBHltd LdnW15H 150p/Mtmsgrcvd18
+Prediction: SPAM
+Spam probability: 0.9985
+Contributing tokens:
+[(np.str_('LdnW15H'), 0.037718707602367146), (np.str_('83355'), 0.03590454485634087), (np.str_('No'), 0.03146814396764284), (np.str_('COLLECT'), 0.029972929282936323), (np.str_('র'), -0.026127828190274812), (np.str_('ক'), 0.025357649381959134), (np.str_('প'), -0.014305521395515485), (np.str_('ল'), -0.000842811975237995)]
+
+[hi] आप कैसे कर रहे हैं? आशा है कि आप नए स्कूल साल के लिए आयोजित किया गया है। बस आप एक एमआरीटीटी दिन आप
+Prediction: SPAM
+Spam probability: 0.9985
+Contributing tokens:
+[(np.str_('आय'), 0.2632782322196142), (np.str_('य'), 0.26296285099795935), (np.str_('क'), 0.21252335720163273), (np.str_('नए'), 0.19697435760795953), (np.str_('कर'), 0.16736955757327354), (np.str_('आप'), 0.16304212443173205), (np.str_('द'), 0.15109957223989343), (np.str_('बस'), -0.03328285511523784)]
+
+[pa] U Cash-Balance ਇਸ ਵੇਲੇ 500 £ ਹੈ - ਇਸ ਵੇਲੇ U Cash-In ਨੂੰ ਮੈਕਸ ਕਰਨ ਲਈ ਹੁਣ COLLECT ਨੂੰ 83600 ਨੂੰ 150p/msg. CC: 08718720201 PO BOX 114/14 TCR/W1
+Prediction: SPAM
+Spam probability: 0.9985
+Contributing tokens:
+[(np.str_('TCR'), 0.004556531935590335), (np.str_('ਵ'), 0.003880808117970476), (np.str_('83600'), 0.0037784414257342374), (np.str_('500'), 0.0033179182911925184), (np.str_('ਕਰਨ'), 0.003245739006827067), (np.str_('114'), 0.003151002566426793), (np.str_('Cash'), 0.0029638191710427897), (np.str_('msg'), 0.0025159102460807076)]
+
+[pa] You have WON a guaranteed £1000 cash or a £2000 prize. for claim yr prize call our customer service representative at 08714712379 between 10am-7pm ਕੀਮਤ 10p
+Prediction: SPAM
+Spam probability: 0.9985
+Contributing tokens:
+[(np.str_('prize'), 6.367036585972363e-07), (np.str_('guaranteed'), 5.848131809033194e-07), (np.str_('claim'), 5.452075342522161e-07), (np.str_('10am'), 4.409835820556122e-07), (np.str_('10p'), 3.491359733097345e-07), (np.str_('service'), 3.266792710926085e-07), (np.str_('08714712379'), -2.582841605477781e-07), (np.str_('2000'), -5.07634716292873e-08)]

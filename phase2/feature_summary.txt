@@ -1,0 +1,61 @@
+PHASE 2 — FEATURE ENGINEERING SUMMARY
+============================================================
+
+Languages included:
+['bn', 'en', 'hi', 'mr', 'pa', 'ur']
+
+Total rows: 30333
+Unique original SMS: 5157
+
+Overall class distribution:
+label
+ham     26550
+spam     3783
+
+Spam ratio by language:
+language
+ur    0.129536
+bn    0.126836
+en    0.124297
+mr    0.123529
+hi    0.122759
+pa    0.121456
+
+Feature correlation with spam:
+has_phone_or_code     0.824035
+fraud_signal_count    0.788999
+digit_ratio           0.712837
+urgency_score         0.405565
+has_url               0.329399
+caps_ratio            0.281932
+msg_length            0.278733
+exclamation_count     0.259949
+has_email             0.076829
+has_currency          0.041565
+special_char_ratio   -0.053644
+has_upi_mention            NaN
+
+Leakage-safe split:
+Train original messages: 3609
+Validation original messages: 774
+Test original messages: 774
+
+Train rows: 21232
+Validation rows: 4553
+Test rows: 4548
+
+TF-IDF vocabulary size: 20000
+
+Fraud-related features:
+- has_url
+- has_phone_or_code
+- has_currency
+- has_email
+- has_upi_mention
+- urgency_score
+- exclamation_count
+- digit_ratio
+- special_char_ratio
+- caps_ratio
+- msg_length
+- fraud_signal_count

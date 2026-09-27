@@ -1,0 +1,41 @@
+PHASE 4 — FAST MURIL FINE-TUNE RESULTS
+============================================================
+
+Model: google/muril-base-cased
+Fast mode: True
+Training rows: 3000
+Training original SMS groups: 513
+Validation rows: 4553
+Test rows: 4548
+Maximum sequence length: 64
+Epochs: 2
+Batch size: 4
+
+FINAL TEST METRICS
+----------------------------------------
+Accuracy : 0.9730
+Precision: 0.8810
+Recall   : 0.9044
+F1       : 0.8926
+
+CLASSIFICATION REPORT
+----------------------------------------
+              precision    recall  f1-score   support
+
+         ham       0.99      0.98      0.98      3983
+        spam       0.88      0.90      0.89       565
+
+    accuracy                           0.97      4548
+   macro avg       0.93      0.94      0.94      4548
+weighted avg       0.97      0.97      0.97      4548
+
+
+PER-LANGUAGE PERFORMANCE
+----------------------------------------
+language  accuracy  precision   recall       f1
+      bn  0.972222   0.871287 0.916667 0.893401
+      en  0.980620   0.900990 0.947917 0.923858
+      hi  0.963684   0.876404 0.821053 0.847826
+      mr  0.975131   0.901099 0.891304 0.896175
+      pa  0.973082   0.880435 0.900000 0.890110
+      ur  0.972973   0.858491 0.947917 0.900990
